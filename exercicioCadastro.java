@@ -20,16 +20,35 @@ public class jonathan{
 
         Scanner sc = new Scanner(System.in);
 
-        System.out.print("Digite seu nome: ");
+        String nome;
+        int idade;
+        char senha,email;
+
+
+        /*System.out.print("Digite seu nome: ");
         String nome = sc.nextLine();
         System.out.print("Digite sua idade: ");
         int idade = sc.nextInt();
         System.out.print("Digite o email (ex: usuario@gmail.com): ");
         String email = sc.nextLine();
-        System.out.print("Digite a senha(Deve conter número,letra minuscula,letra maiuscula e caracter especial(#,*,_,!,@");
+        System.out.print("Digite a senha(Deve conter número,letra minuscula,letra maiuscula e caracter especial(#,*,_,!,@");*/
 
         do {
-            System.out.println("Olá"+nome+", voce tem"+idade+"Seu email é"+email+"");
+            if (sc.hasNextLine()){
+            nome = sc.nextLine();
+            System.out.println("Olá "+nome+" Bem vindo!");
+            }
+            else{
+                System.out.println("Digite caracteres válidos!");
+            }
+            idade = sc.nextInt();
+            if (idade < 0 || idade > 150){
+                System.out.println("Idade inválida!");
+            }
+            else {
+                email = ;
+
+            }
         }
         while ();
     }
